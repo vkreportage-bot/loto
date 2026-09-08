@@ -1,0 +1,18 @@
+{
+  "name": "loto-data",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "import": "tsx scripts/import-fdj.ts",
+    "normalize": "tsx scripts/normalize.ts",
+    "validate": "tsx scripts/validate.ts",
+    "update": "tsx scripts/update-draws.ts",
+    "stats": "tsx src/statistics.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
