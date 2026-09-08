@@ -1,0 +1,52 @@
+{
+  "source": "FDJ",
+  "historyPage": "https://www.fdj.fr/jeux-de-tirage/loto/historique",
+  "generatedAt": "2026-09-08T17:23:10.495Z",
+  "archives": [
+    {
+      "id": "2019-present",
+      "label": "Novembre 2019 à aujourd'hui",
+      "url": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afp6",
+      "order": 5,
+      "file": "data/raw/archives/2019-present.zip",
+      "bytes": 183276,
+      "downloadedAt": "2026-09-08T17:23:10.222Z"
+    },
+    {
+      "id": "2019-02-to-2019-11",
+      "label": "Février 2019 à novembre 2019",
+      "url": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afo6",
+      "order": 4,
+      "file": "data/raw/archives/2019-02-to-2019-11.zip",
+      "bytes": 14336,
+      "downloadedAt": "2026-09-08T17:23:10.272Z"
+    },
+    {
+      "id": "2017-03-to-2019-02",
+      "label": "Mars 2017 à février 2019",
+      "url": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afn6",
+      "order": 3,
+      "file": "data/raw/archives/2017-03-to-2019-02.zip",
+      "bytes": 39531,
+      "downloadedAt": "2026-09-08T17:23:10.333Z"
+    },
+    {
+      "id": "2008-10-to-2017-03",
+      "label": "Octobre 2008 à mars 2017",
+      "url": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afm6",
+      "order": 2,
+      "file": "data/raw/archives/2008-10-to-2017-03.zip",
+      "bytes": 70463,
+      "downloadedAt": "2026-09-08T17:23:10.388Z"
+    },
+    {
+      "id": "1976-05-to-2008-10",
+      "label": "Mai 1976 à octobre 2008",
+      "url": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afl6",
+      "order": 1,
+      "file": "data/raw/archives/1976-05-to-2008-10.zip",
+      "bytes": 244366,
+      "downloadedAt": "2026-09-08T17:23:10.494Z"
+    }
+  ]
+}

@@ -1,20 +1,24 @@
-/**
- * Mise à jour incrémentale après chaque nouveau tirage.
- *
- * Principe :
- * 1. récupérer le dernier tirage officiel ;
- * 2. vérifier s'il existe déjà ;
- * 3. valider les numéros ;
- * 4. ajouter le tirage ;
- * 5. régénérer les fichiers normalisés ;
- * 6. éventuellement synchroniser Google Sheets.
- */
+import { execFileSync } from "node:child_process";
 
-async function main() {
-  console.log("Mise à jour des tirages : scaffold prêt.");
+function npmRun(script: string, args: string[] = []): void {
+  console.log(`\n> npm run ${script}${args.length ? ` -- ${args.join(" ")}` : ""}`);
+  execFileSync("npm", ["run", script, ...(args.length ? ["--", ...args] : [])], {
+    stdio: "inherit",
+    env: process.env
+  });
 }
 
-main().catch((error) => {
+function main() {
+  npmRun("import", ["--latest"]);
+  npmRun("normalize");
+  npmRun("validate");
+  npmRun("stats");
+  npmRun("test");
+}
+
+try {
+  main();
+} catch (error) {
   console.error(error);
   process.exit(1);
-});
+}

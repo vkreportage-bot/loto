@@ -3,10 +3,11 @@ name: Update LOTO data
 on:
   workflow_dispatch:
   schedule:
-    # Heures UTC. À ajuster après validation de l'heure de publication FDJ.
-    - cron: "30 21 * * 1"
-    - cron: "30 21 * * 3"
-    - cron: "30 21 * * 6"
+    # GitHub cron = UTC. 22:30 UTC est volontairement après la publication
+    # habituelle des tirages du lundi, mercredi et samedi.
+    - cron: "30 22 * * 1"
+    - cron: "30 22 * * 3"
+    - cron: "30 22 * * 6"
 
 permissions:
   contents: write
@@ -28,13 +29,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Update draws
+      - name: Update official FDJ data
         run: npm run update
 
-      - name: Validate
-        run: npm run validate
-
-      - name: Commit changes
+      - name: Commit updated data
         run: |
           if git diff --quiet; then
             echo "No changes"
@@ -43,7 +41,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add data/
-          git commit -m "chore: update LOTO draws"
+          git commit -m "chore(data): update LOTO draws"
           git push

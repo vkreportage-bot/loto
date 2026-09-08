@@ -1,6 +1,6 @@
 {
   "name": "loto-data",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,9 +8,18 @@
     "normalize": "tsx scripts/normalize.ts",
     "validate": "tsx scripts/validate.ts",
     "update": "tsx scripts/update-draws.ts",
-    "stats": "tsx src/statistics.ts"
+    "stats": "tsx src/statistics.ts",
+    "pipeline": "npm run import && npm run normalize && npm run validate && npm run stats && npm test",
+    "test": "node --import tsx --test tests/**/*.test.ts",
+    "check": "tsc --noEmit && npm test"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.16",
+    "csv-parse": "^6.1.0",
+    "iconv-lite": "^0.7.0"
   },
   "devDependencies": {
+    "@types/adm-zip": "^0.5.7",
     "@types/node": "^22.0.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0"
