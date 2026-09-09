@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-08T17:23:11.175Z",
-  "draws": 7663,
+  "generatedAt": "2026-09-09T22:35:12.746Z",
+  "draws": 7664,
   "historic": 4858,
-  "modern": 2805,
+  "modern": 2806,
   "dateRange": {
     "first": "1976-05-19",
-    "last": "2026-09-07"
+    "last": "2026-09-09"
   },
   "errors": 0,
   "warnings": 0,
