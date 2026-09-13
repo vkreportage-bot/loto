@@ -32,3 +32,6 @@ jobs:
 
       - name: Validate committed dataset
         run: npm run validate
+
+      - name: Build personal analysis app
+        run: npm run build:frontend

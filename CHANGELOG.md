@@ -10,6 +10,14 @@ Le projet suit [Semantic Versioning](https://semver.org/) :
 
 ## [Unreleased]
 
+### Application personnelle
+
+- atelier local en français : vue d’ensemble, numéros, paires et historique ;
+- filtres communs, détail des numéros, recherche, pagination et exports CSV ;
+- séparation des régimes et du second tirage, fréquences nulles et retards bornés explicites ;
+- préférences locales et export statique avec données et polices intégrées ;
+- commandes `npm run dev` et `npm run build:frontend`.
+
 ### Corrigé après audit
 
 - unicité historique fondée sur la date et l’identifiant, supprimant 942 faux doublons ;

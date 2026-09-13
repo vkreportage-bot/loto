@@ -12,7 +12,9 @@
     "pipeline": "npm run check && npm run import && npm run normalize",
     "test": "node --import tsx --test tests/**/*.test.ts",
     "check": "tsc --noEmit && npm test",
-    "audit:ci": "npm audit --audit-level=moderate"
+    "audit:ci": "npm audit --audit-level=moderate",
+    "dev": "node --import tsx scripts/frontend-dev.ts",
+    "build:frontend": "node --import tsx scripts/frontend-build.ts"
   },
   "dependencies": {
     "csv-parse": "^7.0.2",

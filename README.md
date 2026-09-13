@@ -132,3 +132,30 @@ La normalisation refuse de supprimer une clé présente dans la base précédent
 `npm run normalize` prépare les sept fichiers dans `data/processed.next`, valide les tirages et calcule les statistiques avant publication. L’ancienne génération est conservée dans `data/processed.previous` pendant le remplacement du répertoire. Une erreur de préparation conserve la base publiée ; après une interruption entre les renommages, le prochain lancement restaure la génération précédente. Un verrou empêche deux normalisations simultanées. Il peut exister un bref intervalle où le répertoire est absent entre les renommages ; ce mécanisme ne constitue pas une transaction durable contre une panne matérielle. Les archives brutes sont importées séparément.
 
 `npm run check` couvre TypeScript, les tests unitaires, les archives locales et la publication dans des répertoires temporaires. Aucun accès FDJ n’est nécessaire pour ces tests. La fraîcheur des archives locales reste un avertissement ; une mise à jour réseau s’effectue avec `npm run update`.
+
+## Application personnelle d’analyse
+
+```bash
+npm run dev
+```
+
+Ouvrir **http://127.0.0.1:4173**. Le serveur écoute uniquement sur l’interface locale. `PORT=4174 npm run dev` permet de choisir un autre port.
+
+L’atelier propose quatre vues :
+
+- **Vue d’ensemble** : dernier tirage de la sélection, fréquences, retard, sommes et répartition pairs/impairs ;
+- **Numéros** : carte des 49 numéros, détail d’un numéro, historique récent de ses apparitions, tableau triable, Chance ou complémentaire séparé ;
+- **Paires** : classement des rencontres, filtre par numéro, comparaison à la référence théorique ;
+- **Historique** : recherche des tirages contenant tous les numéros saisis, pagination, ordre de sortie, détails du second tirage.
+
+Les filtres partagés sélectionnent le régime, le tirage principal ou secondaire et les 50/100/500 derniers tirages, tout l’historique ou une plage de dates inclusive. Ils sont mémorisés dans le navigateur. Le bouton d’export produit un CSV de la vue courante : toutes les lignes correspondantes, même celles hors de la page affichée.
+
+Le retard est mesuré dans l’échantillon sélectionné. `≥ N` signale un numéro absent des N tirages observés. Les valeurs théoriques servent de repères descriptifs et ne prédisent pas les prochains tirages.
+
+**Actualiser les données :** exécuter `npm run update` (ou récupérer les commits automatiques avec `git pull --ff-only`), puis cliquer sur **Recharger les données**. Ce bouton relit la base locale validée ; il ne lance pas de téléchargement FDJ. Les calculs et les préférences restent dans le navigateur. Les polices sont servies localement.
+
+```bash
+npm run build:frontend
+```
+
+Cette commande produit un site statique autonome dans `dist/app`, avec un instantané compact des données (environ 850 Ko). Servir ce répertoire via HTTP ; ne pas ouvrir `index.html` directement avec `file://`. Une nouvelle construction est nécessaire pour actualiser cet instantané ou prendre en compte un changement de code. Le serveur de développement reconstruit l’application à son lancement, sans rechargement automatique du code.
