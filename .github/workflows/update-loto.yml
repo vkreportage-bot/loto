@@ -3,11 +3,13 @@ name: Update LOTO data
 on:
   workflow_dispatch:
   schedule:
-    # GitHub cron = UTC. 22:30 UTC est volontairement après la publication
-    # habituelle des tirages du lundi, mercredi et samedi.
     - cron: "30 22 * * 1"
     - cron: "30 22 * * 3"
     - cron: "30 22 * * 6"
+
+concurrency:
+  group: update-loto-data
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -15,7 +17,6 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,11 +27,22 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install locked dependencies
+        run: npm ci
+
+      - name: Security audit
+        run: npm run audit:ci
+
+      - name: Unit/type checks before data update
+        run: npm run check
 
       - name: Update official FDJ data
         run: npm run update
+
+      - name: Final validation and tests
+        run: |
+          npm run validate
+          npm run check
 
       - name: Commit updated data
         run: |

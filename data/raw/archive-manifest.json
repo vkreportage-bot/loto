@@ -1,7 +1,8 @@
 {
+  "schemaVersion": 1,
   "source": "FDJ",
   "historyPage": "https://www.fdj.fr/jeux-de-tirage/loto/historique",
-  "generatedAt": "2026-09-08T17:23:10.495Z",
+  "generatedAt": "2026-09-09T12:37:33.142Z",
   "archives": [
     {
       "id": "2019-present",
@@ -10,7 +11,13 @@
       "order": 5,
       "file": "data/raw/archives/2019-present.zip",
       "bytes": 183276,
-      "downloadedAt": "2026-09-08T17:23:10.222Z"
+      "sha256": "210b14f32052f8f23a82157be5a77aed610ec0326e04e2ae5c9b1c9adb278919",
+      "contentType": "application/zip",
+      "finalUrl": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afp6",
+      "csvEntries": [
+        "loto_201911.csv"
+      ],
+      "downloadedAt": "2026-09-09T12:37:32.257Z"
     },
     {
       "id": "2019-02-to-2019-11",
@@ -19,7 +26,13 @@
       "order": 4,
       "file": "data/raw/archives/2019-02-to-2019-11.zip",
       "bytes": 14336,
-      "downloadedAt": "2026-09-08T17:23:10.272Z"
+      "sha256": "5daee376ffe313ed7e970a4783884fec6efb26d57a86858a389bba710fc8f452",
+      "contentType": "application/zip",
+      "finalUrl": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afo6",
+      "csvEntries": [
+        "loto_201902.csv"
+      ],
+      "downloadedAt": "2026-09-09T12:37:32.430Z"
     },
     {
       "id": "2017-03-to-2019-02",
@@ -28,7 +41,13 @@
       "order": 3,
       "file": "data/raw/archives/2017-03-to-2019-02.zip",
       "bytes": 39531,
-      "downloadedAt": "2026-09-08T17:23:10.333Z"
+      "sha256": "f357ae099d0aa9be33e88d2ccf3a010d8d1d0e73ea2c1258294f553ca1380554",
+      "contentType": "application/zip",
+      "finalUrl": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afn6",
+      "csvEntries": [
+        "loto2017.csv"
+      ],
+      "downloadedAt": "2026-09-09T12:37:32.608Z"
     },
     {
       "id": "2008-10-to-2017-03",
@@ -37,7 +56,13 @@
       "order": 2,
       "file": "data/raw/archives/2008-10-to-2017-03.zip",
       "bytes": 70463,
-      "downloadedAt": "2026-09-08T17:23:10.388Z"
+      "sha256": "367c4b3d143f5c24fed3a05634464ca4a1043a26d6b0737d8208ba0a9cb8424e",
+      "contentType": "application/zip",
+      "finalUrl": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afm6",
+      "csvEntries": [
+        "nouveau_loto.csv"
+      ],
+      "downloadedAt": "2026-09-09T12:37:32.796Z"
     },
     {
       "id": "1976-05-to-2008-10",
@@ -46,7 +71,13 @@
       "order": 1,
       "file": "data/raw/archives/1976-05-to-2008-10.zip",
       "bytes": 244366,
-      "downloadedAt": "2026-09-08T17:23:10.494Z"
+      "sha256": "4fb634e4f68511b95b77b94e20d337ab3a1e0ef89c11da5394223689e9fcce51",
+      "contentType": "application/zip",
+      "finalUrl": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afl6",
+      "csvEntries": [
+        "loto.csv"
+      ],
+      "downloadedAt": "2026-09-09T12:37:33.139Z"
     }
   ]
 }

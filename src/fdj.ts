@@ -1,6 +1,6 @@
-import AdmZip from "adm-zip";
 import { parse } from "csv-parse/sync";
 import iconv from "iconv-lite";
+import { assertOfficialFdjArchiveUrl, extractSafeZipEntries, validateDownloadedArchive } from "./archive-security.js";
 import type { LotoDraw, LotoRuleSet, PrizeTier, SecondDraw } from "./types.js";
 
 export const FDJ_HISTORY_PAGE = "https://www.fdj.fr/jeux-de-tirage/loto/historique";
@@ -67,23 +67,43 @@ export async function discoverOfficialArchiveUrls(): Promise<string[]> {
 
 export async function resolveArchives(): Promise<ArchiveDefinition[]> {
   const discovered = await discoverOfficialArchiveUrls();
-  if (discovered.length < 5) return FALLBACK_ARCHIVES;
 
-  // Les identifiants officiels sont stables ; si la page en fournit au moins 5,
-  // on remplace seulement les URL correspondantes à partir du suffixe connu.
-  const bySuffix = new Map(discovered.map((url) => [url.slice(-3), url]));
-  return FALLBACK_ARCHIVES.map((archive) => ({
-    ...archive,
-    url: bySuffix.get(archive.url.slice(-3)) ?? archive.url
-  }));
+  if (!discovered.length) {
+    console.warn("WARNING: unable to rediscover FDJ archive links; using the pinned official URLs.");
+    return FALLBACK_ARCHIVES;
+  }
+
+  for (const url of discovered) assertOfficialFdjArchiveUrl(url);
+
+  const missingPinned = FALLBACK_ARCHIVES.filter(
+    (archive) => !discovered.includes(archive.url)
+  );
+
+  if (missingPinned.length) {
+    throw new Error(
+      `FDJ archive links changed unexpectedly. Missing pinned archive(s): ${missingPinned
+        .map((archive) => archive.id)
+        .join(", ")}`
+    );
+  }
+
+  return FALLBACK_ARCHIVES;
 }
 
-export async function downloadArchive(url: string): Promise<Buffer> {
+export interface DownloadedArchive {
+  buffer: Buffer;
+  contentType: string | null;
+  finalUrl: string;
+}
+
+export async function downloadArchiveWithMetadata(url: string): Promise<DownloadedArchive> {
+  assertOfficialFdjArchiveUrl(url);
+
   const response = await fetch(url, {
     redirect: "follow",
     headers: {
-      "user-agent": "loto-data/0.2 (+https://github.com/vkreportage-bot/loto)",
-      accept: "application/zip,application/octet-stream,*/*"
+      "user-agent": "loto-data/0.2.1 (+https://github.com/vkreportage-bot/loto)",
+      accept: "application/zip,application/octet-stream"
     }
   });
 
@@ -91,7 +111,16 @@ export async function downloadArchive(url: string): Promise<Buffer> {
     throw new Error(`FDJ download failed (${response.status}) for ${url}`);
   }
 
-  return Buffer.from(await response.arrayBuffer());
+  const buffer = Buffer.from(await response.arrayBuffer());
+  const contentType = response.headers.get("content-type");
+  const finalUrl = response.url || url;
+
+  validateDownloadedArchive(url, finalUrl, contentType, buffer);
+  return { buffer, contentType, finalUrl };
+}
+
+export async function downloadArchive(url: string): Promise<Buffer> {
+  return (await downloadArchiveWithMetadata(url)).buffer;
 }
 
 export interface CsvEntry {
@@ -106,11 +135,9 @@ function decodeCsv(buffer: Buffer): string {
 }
 
 export function extractCsvEntries(zipBuffer: Buffer): CsvEntry[] {
-  const zip = new AdmZip(zipBuffer);
-  return zip
-    .getEntries()
-    .filter((entry) => !entry.isDirectory && entry.entryName.toLowerCase().endsWith(".csv"))
-    .map((entry) => ({ name: entry.entryName, text: decodeCsv(entry.getData()) }));
+  return extractSafeZipEntries(zipBuffer)
+    .filter((entry) => entry.name.toLowerCase().endsWith(".csv"))
+    .map((entry) => ({ name: entry.name, text: decodeCsv(entry.data) }));
 }
 
 export type RawRow = Record<string, string>;
@@ -135,16 +162,23 @@ function nullableString(value: unknown): string | null {
 function nullableInt(value: unknown): number | null {
   const text = String(value ?? "").trim();
   if (!text) return null;
-  const n = Number.parseInt(text.replace(/\s/g, ""), 10);
-  return Number.isFinite(n) ? n : null;
+  const normalized = text.replace(/\s/g, "");
+  const n = Number(normalized);
+  if (!/^[+-]?\d+$/.test(normalized) || !Number.isSafeInteger(n)) {
+    throw new Error(`Invalid numeric integer: ${text}`);
+  }
+  return n;
 }
 
 function nullableFrenchFloat(value: unknown): number | null {
   const text = String(value ?? "").trim();
   if (!text) return null;
   const normalized = text.replace(/\s/g, "").replace(",", ".");
-  const n = Number.parseFloat(normalized);
-  return Number.isFinite(n) ? n : null;
+  const n = Number(normalized);
+  if (!/^[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?$/.test(normalized) || !Number.isFinite(n)) {
+    throw new Error(`Invalid numeric payout: ${text}`);
+  }
+  return n;
 }
 
 export function normalizeDate(value: unknown): string {
@@ -217,7 +251,7 @@ function buildPrizeTiers(row: RawRow, suffix = ""): PrizeTier[] {
     tiers.push({
       rank,
       winners: nullableInt(winnerValue),
-      payoutEur: nullableFrenchFloat(payoutValue)
+      payout: nullableFrenchFloat(payoutValue)
     });
   }
   return tiers;

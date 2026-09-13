@@ -1,13 +1,8 @@
 import { pairFrequencies } from "./combinations.js";
 import { frequencyTable, numberFrequencies } from "./frequencies.js";
-import { readDraws, writeJson } from "./io.js";
-import type { LotoRuleSet, StatisticsSummary } from "./types.js";
+import type { LotoDraw, LotoRuleSet, StatisticsSummary } from "./types.js";
 
-const MASTER_PATH = "data/processed/loto-master.json";
-const OUTPUT_PATH = "data/processed/stats-summary.json";
-
-async function main() {
-  const draws = await readDraws(MASTER_PATH);
+export function buildStatistics(draws: LotoDraw[], now = new Date()): StatisticsSummary {
   const ruleSets: LotoRuleSet[] = ["historic-6-plus-complementary", "modern-5-plus-chance"];
 
   const byRuleSet = Object.fromEntries(
@@ -28,7 +23,7 @@ async function main() {
   const modern = draws.filter((draw) => draw.ruleSet === "modern-5-plus-chance");
 
   const summary: StatisticsSummary = {
-    generatedAt: new Date().toISOString(),
+    generatedAt: now.toISOString(),
     totalDraws: draws.length,
     dateRange: {
       first: draws.at(0)?.date ?? null,
@@ -43,14 +38,5 @@ async function main() {
     )
   };
 
-  await writeJson(OUTPUT_PATH, summary);
-
-  console.log(`Statistics written to ${OUTPUT_PATH}`);
-  console.log(`Draws: ${summary.totalDraws}`);
-  console.log(`Range: ${summary.dateRange.first ?? "?"} -> ${summary.dateRange.last ?? "?"}`);
+  return summary;
 }
-
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});

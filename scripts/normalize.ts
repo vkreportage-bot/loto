@@ -1,4 +1,4 @@
-import { readFile, stat, writeFile } from "node:fs/promises";
+import { cp, readFile, stat, writeFile } from "node:fs/promises";
 import {
   extractCsvEntries,
   FALLBACK_ARCHIVES,
@@ -6,12 +6,16 @@ import {
   parseFdjCsv,
   sortDraws
 } from "../src/fdj.js";
-import { drawsToCsv, ensureParent, writeJson } from "../src/io.js";
+import { drawsToCsv, readDraws, writeJson } from "../src/io.js";
+import { dedupeDrawsStrict } from "../src/dedupe.js";
+import { publishDirectory } from "../src/publication.js";
+import { buildValidationReport } from "../src/validation.js";
+import { buildStatistics } from "../src/statistics.js";
 import type { LotoDraw } from "../src/types.js";
 
 const RAW_DIR = "data/raw/archives";
 const MASTER_JSON = "data/processed/loto-master.json";
-const MASTER_CSV = "data/processed/loto-master.csv";
+
 
 async function exists(path: string): Promise<boolean> {
   try {
@@ -22,11 +26,8 @@ async function exists(path: string): Promise<boolean> {
   }
 }
 
-function dedupeKey(draw: LotoDraw): string {
-  return `${draw.date}|${draw.drawId}`;
-}
 
-async function main() {
+async function normalize(staging: string) {
   const missing = [];
   for (const archive of FALLBACK_ARCHIVES) {
     const path = `${RAW_DIR}/${archive.id}.zip`;
@@ -37,10 +38,10 @@ async function main() {
     throw new Error(`Missing raw archive(s). Run npm run import first:\n${missing.join("\n")}`);
   }
 
-  const deduped = new Map<string, LotoDraw>();
+  const parsedDraws: LotoDraw[] = [];
   let rawRows = 0;
 
-  // Oldest -> newest, so a newer archive wins on a boundary duplicate.
+  // Keep the oldest provenance when boundary duplicates are canonically identical.
   for (const archive of [...FALLBACK_ARCHIVES].sort((a, b) => a.order - b.order)) {
     const path = `${RAW_DIR}/${archive.id}.zip`;
     const zipBuffer = await readFile(path);
@@ -57,7 +58,7 @@ async function main() {
       rows.forEach((row, index) => {
         try {
           const draw = normalizeFdjRow(row, archive.id, entry.name);
-          deduped.set(dedupeKey(draw), draw);
+          parsedDraws.push(draw);
         } catch (error) {
           const message = error instanceof Error ? error.message : String(error);
           throw new Error(`${archive.id}/${entry.name} row ${index + 2}: ${message}`);
@@ -66,20 +67,37 @@ async function main() {
     }
   }
 
-  const draws = sortDraws([...deduped.values()]);
+  const dedupe = dedupeDrawsStrict(parsedDraws);
+  const draws = sortDraws(dedupe.draws);
   const historic = draws.filter((draw) => draw.ruleSet === "historic-6-plus-complementary");
   const modern = draws.filter((draw) => draw.ruleSet === "modern-5-plus-chance");
 
-  await writeJson(MASTER_JSON, draws);
-  await ensureParent(MASTER_CSV);
-  await writeFile(MASTER_CSV, drawsToCsv(draws), "utf8");
-  await writeFile("data/processed/loto-historic.csv", drawsToCsv(historic), "utf8");
-  await writeFile("data/processed/loto-modern.csv", drawsToCsv(modern), "utf8");
-  await writeJson("data/processed/normalization-report.json", {
-    generatedAt: new Date().toISOString(),
+  let previous: LotoDraw[] = [];
+  try {
+    previous = await readDraws(MASTER_JSON);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+  }
+  const now = new Date();
+  const validation = buildValidationReport(draws, previous, now);
+  if (validation.errors) {
+    throw new Error(`Validation failed before publication: ${validation.issues.filter(issue => issue.level === "error").slice(0, 10).map(issue => `${issue.date ?? ""} ${issue.message}`).join("; ")}`);
+  }
+  const statistics = buildStatistics(draws, now);
+  // Preserve ancillary files (for example .gitkeep) alongside generated outputs.
+  if (await exists("data/processed")) await cp("data/processed", staging, { recursive: true });
+  await writeJson(`${staging}/loto-master.json`, draws);
+  await writeFile(`${staging}/loto-master.csv`, drawsToCsv(draws), "utf8");
+  await writeFile(`${staging}/loto-historic.csv`, drawsToCsv(historic), "utf8");
+  await writeFile(`${staging}/loto-modern.csv`, drawsToCsv(modern), "utf8");
+  await writeJson(`${staging}/validation-report.json`, validation);
+  await writeJson(`${staging}/stats-summary.json`, statistics);
+  await writeJson(`${staging}/normalization-report.json`, {
+    generatedAt: now.toISOString(),
     rawRows,
     normalizedDraws: draws.length,
-    duplicatesRemoved: rawRows - draws.length,
+    duplicatesRemoved: dedupe.duplicates.length,
+    duplicateProvenance: dedupe.duplicates,
     historicDraws: historic.length,
     modernDraws: modern.length,
     dateRange: {
@@ -88,12 +106,15 @@ async function main() {
     }
   });
 
-  console.log(`Normalized ${draws.length} draws (${rawRows - draws.length} boundary duplicates removed).`);
+  for (const issue of validation.issues) console.warn(`WARNING: ${issue.message}`);
+  console.log(`Prepared ${draws.length} draws (${dedupe.duplicates.length} verified boundary duplicates removed).`);
   console.log(`Historic: ${historic.length}; modern: ${modern.length}`);
   console.log(`Range: ${draws.at(0)?.date ?? "?"} -> ${draws.at(-1)?.date ?? "?"}`);
 }
 
-main().catch((error) => {
+publishDirectory("data/processed", normalize).then(() => {
+  console.log("Published validated dataset, exports and statistics.");
+}).catch((error) => {
   console.error(error);
   process.exit(1);
 });

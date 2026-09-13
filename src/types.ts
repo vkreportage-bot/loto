@@ -3,7 +3,7 @@ export type LotoRuleSet = "historic-6-plus-complementary" | "modern-5-plus-chanc
 export interface PrizeTier {
   rank: number;
   winners: number | null;
-  payoutEur: number | null;
+  payout: number | null;
 }
 
 export interface SecondDraw {

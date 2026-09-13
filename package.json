@@ -1,25 +1,25 @@
 {
   "name": "loto-data",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "scripts": {
-    "import": "tsx scripts/import-fdj.ts",
-    "normalize": "tsx scripts/normalize.ts",
-    "validate": "tsx scripts/validate.ts",
-    "update": "tsx scripts/update-draws.ts",
-    "stats": "tsx src/statistics.ts",
-    "pipeline": "npm run import && npm run normalize && npm run validate && npm run stats && npm test",
+    "import": "node --import tsx scripts/import-fdj.ts",
+    "normalize": "node --import tsx scripts/normalize.ts",
+    "validate": "node --import tsx scripts/validate.ts",
+    "update": "node --import tsx scripts/update-draws.ts",
+    "stats": "node --import tsx scripts/statistics.ts",
+    "pipeline": "npm run check && npm run import && npm run normalize",
     "test": "node --import tsx --test tests/**/*.test.ts",
-    "check": "tsc --noEmit && npm test"
+    "check": "tsc --noEmit && npm test",
+    "audit:ci": "npm audit --audit-level=moderate"
   },
   "dependencies": {
-    "adm-zip": "^0.5.16",
-    "csv-parse": "^6.1.0",
+    "csv-parse": "^7.0.2",
+    "fflate": "^0.8.2",
     "iconv-lite": "^0.7.0"
   },
   "devDependencies": {
-    "@types/adm-zip": "^0.5.7",
     "@types/node": "^22.0.0",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0"

@@ -9,11 +9,9 @@ function npmRun(script: string, args: string[] = []): void {
 }
 
 function main() {
+  npmRun("check");
   npmRun("import", ["--latest"]);
   npmRun("normalize");
-  npmRun("validate");
-  npmRun("stats");
-  npmRun("test");
 }
 
 try {
