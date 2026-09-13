@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "FDJ",
   "historyPage": "https://www.fdj.fr/jeux-de-tirage/loto/historique",
-  "generatedAt": "2026-09-12T22:41:50.629Z",
+  "generatedAt": "2026-09-13T13:53:03.681Z",
   "archives": [
     {
       "id": "2019-present",
@@ -17,7 +17,7 @@
       "csvEntries": [
         "loto_201911.csv"
       ],
-      "downloadedAt": "2026-09-12T22:41:50.627Z"
+      "downloadedAt": "2026-09-13T13:53:03.680Z"
     },
     {
       "id": "2019-02-to-2019-11",
