@@ -579762,5 +579762,253 @@
     "currency": "eur",
     "sourceArchive": "2019-present",
     "sourceEntry": "loto_201911.csv"
+  },
+  {
+    "drawId": "26108",
+    "drawNumber": "26108",
+    "drawSequence": null,
+    "date": "2026-09-09",
+    "day": "MERCREDI",
+    "ruleSet": "modern-5-plus-chance",
+    "numbers": [
+      20,
+      23,
+      38,
+      32,
+      3
+    ],
+    "sortedNumbers": [
+      3,
+      20,
+      23,
+      32,
+      38
+    ],
+    "complementaryNumber": null,
+    "chanceNumber": 9,
+    "secondDraw": {
+      "numbers": [
+        11,
+        12,
+        16,
+        47,
+        48
+      ],
+      "sortedNumbers": [
+        11,
+        12,
+        16,
+        47,
+        48
+      ],
+      "prizeTiers": [
+        {
+          "rank": 1,
+          "winners": 1,
+          "payout": 125721
+        },
+        {
+          "rank": 2,
+          "winners": 198,
+          "payout": 639.9
+        },
+        {
+          "rank": 3,
+          "winners": 9475,
+          "payout": 34.3
+        },
+        {
+          "rank": 4,
+          "winners": 155954,
+          "payout": 3
+        }
+      ]
+    },
+    "prizeTiers": [
+      {
+        "rank": 1,
+        "winners": 0,
+        "payout": 5000000
+      },
+      {
+        "rank": 2,
+        "winners": 1,
+        "payout": 171873.3
+      },
+      {
+        "rank": 3,
+        "winners": 35,
+        "payout": 1198.5
+      },
+      {
+        "rank": 4,
+        "winners": 323,
+        "payout": 468.4
+      },
+      {
+        "rank": 5,
+        "winners": 1489,
+        "payout": 60.7
+      },
+      {
+        "rank": 6,
+        "winners": 14332,
+        "payout": 22.7
+      },
+      {
+        "rank": 7,
+        "winners": 23206,
+        "payout": 10.9
+      },
+      {
+        "rank": 8,
+        "winners": 214359,
+        "payout": 4.6
+      },
+      {
+        "rank": 9,
+        "winners": 335250,
+        "payout": 2.2
+      }
+    ],
+    "winningCodes": [
+      "N 8713 6441",
+      "F 5472 9704",
+      "N 7074 5975",
+      "M 6481 9135",
+      "S 8585 6391",
+      "Q 4298 5850",
+      "A 0413 1290",
+      "C 9117 0707",
+      "Q 3644 8911",
+      "K 2924 0288"
+    ],
+    "currency": "eur",
+    "sourceArchive": "2019-present",
+    "sourceEntry": "loto_201911.csv"
+  },
+  {
+    "drawId": "26109",
+    "drawNumber": "26109",
+    "drawSequence": null,
+    "date": "2026-09-12",
+    "day": "SAMEDI",
+    "ruleSet": "modern-5-plus-chance",
+    "numbers": [
+      48,
+      9,
+      26,
+      38,
+      45
+    ],
+    "sortedNumbers": [
+      9,
+      26,
+      38,
+      45,
+      48
+    ],
+    "complementaryNumber": null,
+    "chanceNumber": 1,
+    "secondDraw": {
+      "numbers": [
+        3,
+        7,
+        20,
+        34,
+        42
+      ],
+      "sortedNumbers": [
+        3,
+        7,
+        20,
+        34,
+        42
+      ],
+      "prizeTiers": [
+        {
+          "rank": 1,
+          "winners": 4,
+          "payout": 43302
+        },
+        {
+          "rank": 2,
+          "winners": 342,
+          "payout": 497.1
+        },
+        {
+          "rank": 3,
+          "winners": 15537,
+          "payout": 28.1
+        },
+        {
+          "rank": 4,
+          "winners": 220287,
+          "payout": 3
+        }
+      ]
+    },
+    "prizeTiers": [
+      {
+        "rank": 1,
+        "winners": 0,
+        "payout": 6000000
+      },
+      {
+        "rank": 2,
+        "winners": 4,
+        "payout": 63622.1
+      },
+      {
+        "rank": 3,
+        "winners": 36,
+        "payout": 1725.4
+      },
+      {
+        "rank": 4,
+        "winners": 405,
+        "payout": 553.1
+      },
+      {
+        "rank": 5,
+        "winners": 1549,
+        "payout": 86.4
+      },
+      {
+        "rank": 6,
+        "winners": 18870,
+        "payout": 25.5
+      },
+      {
+        "rank": 7,
+        "winners": 23804,
+        "payout": 15.7
+      },
+      {
+        "rank": 8,
+        "winners": 286106,
+        "payout": 5.1
+      },
+      {
+        "rank": 9,
+        "winners": 356947,
+        "payout": 2.2
+      }
+    ],
+    "winningCodes": [
+      "U 6752 5813",
+      "F 9760 3959",
+      "A 7860 4746",
+      "W 9841 6758",
+      "O 5981 6179",
+      "S 9532 8563",
+      "L 7955 4288",
+      "R 2842 3632",
+      "R 3453 3627",
+      "Q 5748 8944"
+    ],
+    "currency": "eur",
+    "sourceArchive": "2019-present",
+    "sourceEntry": "loto_201911.csv"
   }
 ]

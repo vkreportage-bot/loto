@@ -1,20 +1,15 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-13T13:45:25.819Z",
-  "draws": 7663,
+  "generatedAt": "2026-09-13T13:52:01.965Z",
+  "draws": 7665,
   "historic": 4858,
-  "modern": 2805,
+  "modern": 2807,
   "dateRange": {
     "first": "1976-05-19",
-    "last": "2026-09-07"
+    "last": "2026-09-12"
   },
   "expectedLatestDraw": "2026-09-12",
   "errors": 0,
-  "warnings": 1,
-  "issues": [
-    {
-      "level": "warning",
-      "message": "Latest draw differs from expected calendar draw (actual=2026-09-07, expected=2026-09-12)"
-    }
-  ]
+  "warnings": 0,
+  "issues": []
 }
