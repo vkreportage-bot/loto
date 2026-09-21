@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T22:39:46.795Z",
-  "totalDraws": 7668,
+  "generatedAt": "2026-09-21T22:37:29.698Z",
+  "totalDraws": 7669,
   "dateRange": {
     "first": "1976-05-19",
-    "last": "2026-09-19"
+    "last": "2026-09-21"
   },
   "byRuleSet": {
     "historic-6-plus-complementary": {
@@ -1306,399 +1306,399 @@
       ]
     },
     "modern-5-plus-chance": {
-      "draws": 2810,
+      "draws": 2811,
       "mainNumberFrequencies": [
         {
           "number": 1,
           "count": 290,
-          "draws": 2810,
-          "ratePerDraw": 0.10320284697508897,
+          "draws": 2811,
+          "ratePerDraw": 0.1031661330487371,
           "lastSeenDate": "2026-09-16",
-          "delayInDraws": 1
+          "delayInDraws": 2
         },
         {
           "number": 2,
           "count": 275,
-          "draws": 2810,
-          "ratePerDraw": 0.09786476868327403,
+          "draws": 2811,
+          "ratePerDraw": 0.09782995375311278,
           "lastSeenDate": "2026-09-07",
-          "delayInDraws": 5
+          "delayInDraws": 6
         },
         {
           "number": 3,
-          "count": 302,
-          "draws": 2810,
-          "ratePerDraw": 0.10747330960854093,
-          "lastSeenDate": "2026-09-09",
-          "delayInDraws": 4
+          "count": 303,
+          "draws": 2811,
+          "ratePerDraw": 0.10779082177161152,
+          "lastSeenDate": "2026-09-21",
+          "delayInDraws": 0
         },
         {
           "number": 4,
           "count": 288,
-          "draws": 2810,
-          "ratePerDraw": 0.10249110320284698,
+          "draws": 2811,
+          "ratePerDraw": 0.10245464247598719,
           "lastSeenDate": "2026-08-24",
-          "delayInDraws": 11
+          "delayInDraws": 12
         },
         {
           "number": 5,
           "count": 291,
-          "draws": 2810,
-          "ratePerDraw": 0.10355871886120996,
+          "draws": 2811,
+          "ratePerDraw": 0.10352187833511206,
           "lastSeenDate": "2026-09-16",
-          "delayInDraws": 1
+          "delayInDraws": 2
         },
         {
           "number": 6,
-          "count": 294,
-          "draws": 2810,
-          "ratePerDraw": 0.10462633451957296,
-          "lastSeenDate": "2026-08-26",
-          "delayInDraws": 10
+          "count": 295,
+          "draws": 2811,
+          "ratePerDraw": 0.10494485948061189,
+          "lastSeenDate": "2026-09-21",
+          "delayInDraws": 0
         },
         {
           "number": 7,
           "count": 292,
-          "draws": 2810,
-          "ratePerDraw": 0.10391459074733096,
+          "draws": 2811,
+          "ratePerDraw": 0.10387762362148702,
           "lastSeenDate": "2026-08-29",
-          "delayInDraws": 9
+          "delayInDraws": 10
         },
         {
           "number": 8,
           "count": 266,
-          "draws": 2810,
-          "ratePerDraw": 0.09466192170818505,
+          "draws": 2811,
+          "ratePerDraw": 0.09462824617573817,
           "lastSeenDate": "2026-09-14",
-          "delayInDraws": 2
+          "delayInDraws": 3
         },
         {
           "number": 9,
           "count": 290,
-          "draws": 2810,
-          "ratePerDraw": 0.10320284697508897,
+          "draws": 2811,
+          "ratePerDraw": 0.1031661330487371,
           "lastSeenDate": "2026-09-12",
-          "delayInDraws": 3
+          "delayInDraws": 4
         },
         {
           "number": 10,
           "count": 286,
-          "draws": 2810,
-          "ratePerDraw": 0.10177935943060498,
+          "draws": 2811,
+          "ratePerDraw": 0.10174315190323728,
           "lastSeenDate": "2026-09-14",
-          "delayInDraws": 2
+          "delayInDraws": 3
         },
         {
           "number": 11,
           "count": 271,
-          "draws": 2810,
-          "ratePerDraw": 0.09644128113879004,
+          "draws": 2811,
+          "ratePerDraw": 0.09640697260761295,
           "lastSeenDate": "2026-09-19",
-          "delayInDraws": 0
+          "delayInDraws": 1
         },
         {
           "number": 12,
           "count": 279,
-          "draws": 2810,
-          "ratePerDraw": 0.09928825622775801,
+          "draws": 2811,
+          "ratePerDraw": 0.09925293489861259,
           "lastSeenDate": "2026-09-19",
-          "delayInDraws": 0
+          "delayInDraws": 1
         },
         {
           "number": 13,
           "count": 326,
-          "draws": 2810,
-          "ratePerDraw": 0.11601423487544484,
+          "draws": 2811,
+          "ratePerDraw": 0.11597296335823551,
           "lastSeenDate": "2026-09-16",
-          "delayInDraws": 1
+          "delayInDraws": 2
         },
         {
           "number": 14,
           "count": 266,
-          "draws": 2810,
-          "ratePerDraw": 0.09466192170818505,
+          "draws": 2811,
+          "ratePerDraw": 0.09462824617573817,
           "lastSeenDate": "2026-08-22",
-          "delayInDraws": 12
+          "delayInDraws": 13
         },
         {
           "number": 15,
-          "count": 313,
-          "draws": 2810,
-          "ratePerDraw": 0.11138790035587189,
-          "lastSeenDate": "2026-09-02",
-          "delayInDraws": 7
+          "count": 314,
+          "draws": 2811,
+          "ratePerDraw": 0.11170401992173604,
+          "lastSeenDate": "2026-09-21",
+          "delayInDraws": 0
         },
         {
           "number": 16,
           "count": 299,
-          "draws": 2810,
-          "ratePerDraw": 0.10640569395017793,
+          "draws": 2811,
+          "ratePerDraw": 0.10636784062611171,
           "lastSeenDate": "2026-07-27",
-          "delayInDraws": 23
+          "delayInDraws": 24
         },
         {
           "number": 17,
           "count": 284,
-          "draws": 2810,
-          "ratePerDraw": 0.10106761565836299,
+          "draws": 2811,
+          "ratePerDraw": 0.10103166133048737,
           "lastSeenDate": "2026-08-22",
-          "delayInDraws": 12
+          "delayInDraws": 13
         },
         {
           "number": 18,
           "count": 275,
-          "draws": 2810,
-          "ratePerDraw": 0.09786476868327403,
+          "draws": 2811,
+          "ratePerDraw": 0.09782995375311278,
           "lastSeenDate": "2026-09-07",
-          "delayInDraws": 5
+          "delayInDraws": 6
         },
         {
           "number": 19,
           "count": 263,
-          "draws": 2810,
-          "ratePerDraw": 0.09359430604982207,
+          "draws": 2811,
+          "ratePerDraw": 0.0935610103166133,
           "lastSeenDate": "2026-08-10",
-          "delayInDraws": 17
+          "delayInDraws": 18
         },
         {
           "number": 20,
           "count": 277,
-          "draws": 2810,
-          "ratePerDraw": 0.09857651245551602,
+          "draws": 2811,
+          "ratePerDraw": 0.09854144432586268,
           "lastSeenDate": "2026-09-09",
-          "delayInDraws": 4
+          "delayInDraws": 5
         },
         {
           "number": 21,
           "count": 276,
-          "draws": 2810,
-          "ratePerDraw": 0.09822064056939502,
+          "draws": 2811,
+          "ratePerDraw": 0.09818569903948772,
           "lastSeenDate": "2026-09-14",
-          "delayInDraws": 2
+          "delayInDraws": 3
         },
         {
           "number": 22,
           "count": 316,
-          "draws": 2810,
-          "ratePerDraw": 0.11245551601423487,
+          "draws": 2811,
+          "ratePerDraw": 0.11241551049448595,
           "lastSeenDate": "2026-08-24",
-          "delayInDraws": 11
+          "delayInDraws": 12
         },
         {
           "number": 23,
           "count": 290,
-          "draws": 2810,
-          "ratePerDraw": 0.10320284697508897,
+          "draws": 2811,
+          "ratePerDraw": 0.1031661330487371,
           "lastSeenDate": "2026-09-09",
-          "delayInDraws": 4
+          "delayInDraws": 5
         },
         {
           "number": 24,
           "count": 293,
-          "draws": 2810,
-          "ratePerDraw": 0.10427046263345195,
+          "draws": 2811,
+          "ratePerDraw": 0.10423336890786197,
           "lastSeenDate": "2026-08-05",
-          "delayInDraws": 19
+          "delayInDraws": 20
         },
         {
           "number": 25,
           "count": 273,
-          "draws": 2810,
-          "ratePerDraw": 0.09715302491103203,
+          "draws": 2811,
+          "ratePerDraw": 0.09711846318036287,
           "lastSeenDate": "2026-08-03",
-          "delayInDraws": 20
+          "delayInDraws": 21
         },
         {
           "number": 26,
           "count": 296,
-          "draws": 2810,
-          "ratePerDraw": 0.10533807829181495,
+          "draws": 2811,
+          "ratePerDraw": 0.10530060476698684,
           "lastSeenDate": "2026-09-12",
-          "delayInDraws": 3
+          "delayInDraws": 4
         },
         {
           "number": 27,
           "count": 287,
-          "draws": 2810,
-          "ratePerDraw": 0.10213523131672597,
+          "draws": 2811,
+          "ratePerDraw": 0.10209889718961224,
           "lastSeenDate": "2026-07-29",
-          "delayInDraws": 22
+          "delayInDraws": 23
         },
         {
           "number": 28,
           "count": 289,
-          "draws": 2810,
-          "ratePerDraw": 0.10284697508896797,
+          "draws": 2811,
+          "ratePerDraw": 0.10281038776236215,
           "lastSeenDate": "2026-08-15",
-          "delayInDraws": 15
+          "delayInDraws": 16
         },
         {
           "number": 29,
-          "count": 298,
-          "draws": 2810,
-          "ratePerDraw": 0.10604982206405694,
-          "lastSeenDate": "2026-07-25",
-          "delayInDraws": 24
+          "count": 299,
+          "draws": 2811,
+          "ratePerDraw": 0.10636784062611171,
+          "lastSeenDate": "2026-09-21",
+          "delayInDraws": 0
         },
         {
           "number": 30,
           "count": 292,
-          "draws": 2810,
-          "ratePerDraw": 0.10391459074733096,
+          "draws": 2811,
+          "ratePerDraw": 0.10387762362148702,
           "lastSeenDate": "2026-08-26",
-          "delayInDraws": 10
+          "delayInDraws": 11
         },
         {
           "number": 31,
           "count": 306,
-          "draws": 2810,
-          "ratePerDraw": 0.10889679715302492,
+          "draws": 2811,
+          "ratePerDraw": 0.10885805763073639,
           "lastSeenDate": "2026-09-16",
-          "delayInDraws": 1
+          "delayInDraws": 2
         },
         {
           "number": 32,
           "count": 283,
-          "draws": 2810,
-          "ratePerDraw": 0.100711743772242,
+          "draws": 2811,
+          "ratePerDraw": 0.10067591604411241,
           "lastSeenDate": "2026-09-09",
-          "delayInDraws": 4
+          "delayInDraws": 5
         },
         {
           "number": 33,
           "count": 279,
-          "draws": 2810,
-          "ratePerDraw": 0.09928825622775801,
+          "draws": 2811,
+          "ratePerDraw": 0.09925293489861259,
           "lastSeenDate": "2026-08-05",
-          "delayInDraws": 19
+          "delayInDraws": 20
         },
         {
           "number": 34,
           "count": 279,
-          "draws": 2810,
-          "ratePerDraw": 0.09928825622775801,
+          "draws": 2811,
+          "ratePerDraw": 0.09925293489861259,
           "lastSeenDate": "2026-08-15",
-          "delayInDraws": 15
+          "delayInDraws": 16
         },
         {
           "number": 35,
           "count": 289,
-          "draws": 2810,
-          "ratePerDraw": 0.10284697508896797,
+          "draws": 2811,
+          "ratePerDraw": 0.10281038776236215,
           "lastSeenDate": "2026-08-12",
-          "delayInDraws": 16
+          "delayInDraws": 17
         },
         {
           "number": 36,
           "count": 294,
-          "draws": 2810,
-          "ratePerDraw": 0.10462633451957296,
+          "draws": 2811,
+          "ratePerDraw": 0.10458911419423693,
           "lastSeenDate": "2026-09-07",
-          "delayInDraws": 5
+          "delayInDraws": 6
         },
         {
           "number": 37,
           "count": 282,
-          "draws": 2810,
-          "ratePerDraw": 0.100355871886121,
+          "draws": 2811,
+          "ratePerDraw": 0.10032017075773746,
           "lastSeenDate": "2026-08-26",
-          "delayInDraws": 10
+          "delayInDraws": 11
         },
         {
           "number": 38,
           "count": 307,
-          "draws": 2810,
-          "ratePerDraw": 0.1092526690391459,
+          "draws": 2811,
+          "ratePerDraw": 0.10921380291711134,
           "lastSeenDate": "2026-09-14",
-          "delayInDraws": 2
+          "delayInDraws": 3
         },
         {
           "number": 39,
           "count": 259,
-          "draws": 2810,
-          "ratePerDraw": 0.09217081850533808,
+          "draws": 2811,
+          "ratePerDraw": 0.09213802917111348,
           "lastSeenDate": "2026-09-19",
-          "delayInDraws": 0
+          "delayInDraws": 1
         },
         {
           "number": 40,
           "count": 284,
-          "draws": 2810,
-          "ratePerDraw": 0.10106761565836299,
+          "draws": 2811,
+          "ratePerDraw": 0.10103166133048737,
           "lastSeenDate": "2026-08-29",
-          "delayInDraws": 9
+          "delayInDraws": 10
         },
         {
           "number": 41,
           "count": 327,
-          "draws": 2810,
-          "ratePerDraw": 0.11637010676156584,
+          "draws": 2811,
+          "ratePerDraw": 0.11632870864461047,
           "lastSeenDate": "2026-08-03",
-          "delayInDraws": 20
+          "delayInDraws": 21
         },
         {
           "number": 42,
           "count": 269,
-          "draws": 2810,
-          "ratePerDraw": 0.09572953736654805,
+          "draws": 2811,
+          "ratePerDraw": 0.09569548203486304,
           "lastSeenDate": "2026-08-03",
-          "delayInDraws": 20
+          "delayInDraws": 21
         },
         {
           "number": 43,
-          "count": 272,
-          "draws": 2810,
-          "ratePerDraw": 0.09679715302491103,
-          "lastSeenDate": "2026-06-08",
-          "delayInDraws": 44
+          "count": 273,
+          "draws": 2811,
+          "ratePerDraw": 0.09711846318036287,
+          "lastSeenDate": "2026-09-21",
+          "delayInDraws": 0
         },
         {
           "number": 44,
           "count": 280,
-          "draws": 2810,
-          "ratePerDraw": 0.099644128113879,
+          "draws": 2811,
+          "ratePerDraw": 0.09960868018498754,
           "lastSeenDate": "2026-08-31",
-          "delayInDraws": 8
+          "delayInDraws": 9
         },
         {
           "number": 45,
           "count": 285,
-          "draws": 2810,
-          "ratePerDraw": 0.10142348754448399,
+          "draws": 2811,
+          "ratePerDraw": 0.10138740661686232,
           "lastSeenDate": "2026-09-12",
-          "delayInDraws": 3
+          "delayInDraws": 4
         },
         {
           "number": 46,
           "count": 280,
-          "draws": 2810,
-          "ratePerDraw": 0.099644128113879,
+          "draws": 2811,
+          "ratePerDraw": 0.09960868018498754,
           "lastSeenDate": "2026-09-19",
-          "delayInDraws": 0
+          "delayInDraws": 1
         },
         {
           "number": 47,
           "count": 277,
-          "draws": 2810,
-          "ratePerDraw": 0.09857651245551602,
+          "draws": 2811,
+          "ratePerDraw": 0.09854144432586268,
           "lastSeenDate": "2026-07-25",
-          "delayInDraws": 24
+          "delayInDraws": 25
         },
         {
           "number": 48,
           "count": 271,
-          "draws": 2810,
-          "ratePerDraw": 0.09644128113879004,
+          "draws": 2811,
+          "ratePerDraw": 0.09640697260761295,
           "lastSeenDate": "2026-09-19",
-          "delayInDraws": 0
+          "delayInDraws": 1
         },
         {
           "number": 49,
           "count": 290,
-          "draws": 2810,
-          "ratePerDraw": 0.10320284697508897,
+          "draws": 2811,
+          "ratePerDraw": 0.1031661330487371,
           "lastSeenDate": "2026-09-16",
-          "delayInDraws": 1
+          "delayInDraws": 2
         }
       ],
       "topPairs": [
@@ -1708,8 +1708,8 @@
             11
           ],
           "count": 44,
-          "draws": 2810,
-          "ratePerDraw": 0.015658362989323844
+          "draws": 2811,
+          "ratePerDraw": 0.015652792600498042
         },
         {
           "pair": [
@@ -1717,8 +1717,8 @@
             13
           ],
           "count": 42,
-          "draws": 2810,
-          "ratePerDraw": 0.01494661921708185
+          "draws": 2811,
+          "ratePerDraw": 0.014941302027748132
         },
         {
           "pair": [
@@ -1726,8 +1726,8 @@
             16
           ],
           "count": 41,
-          "draws": 2810,
-          "ratePerDraw": 0.014590747330960854
+          "draws": 2811,
+          "ratePerDraw": 0.014585556741373178
         },
         {
           "pair": [
@@ -1735,8 +1735,8 @@
             30
           ],
           "count": 40,
-          "draws": 2810,
-          "ratePerDraw": 0.014234875444839857
+          "draws": 2811,
+          "ratePerDraw": 0.014229811454998222
         },
         {
           "pair": [
@@ -1744,8 +1744,8 @@
             41
           ],
           "count": 39,
-          "draws": 2810,
-          "ratePerDraw": 0.013879003558718862
+          "draws": 2811,
+          "ratePerDraw": 0.013874066168623266
         },
         {
           "pair": [
@@ -1753,8 +1753,8 @@
             41
           ],
           "count": 38,
-          "draws": 2810,
-          "ratePerDraw": 0.013523131672597865
+          "draws": 2811,
+          "ratePerDraw": 0.01351832088224831
         },
         {
           "pair": [
@@ -1762,8 +1762,17 @@
             49
           ],
           "count": 37,
-          "draws": 2810,
-          "ratePerDraw": 0.013167259786476869
+          "draws": 2811,
+          "ratePerDraw": 0.013162575595873355
+        },
+        {
+          "pair": [
+            6,
+            15
+          ],
+          "count": 37,
+          "draws": 2811,
+          "ratePerDraw": 0.013162575595873355
         },
         {
           "pair": [
@@ -1771,8 +1780,8 @@
             24
           ],
           "count": 37,
-          "draws": 2810,
-          "ratePerDraw": 0.013167259786476869
+          "draws": 2811,
+          "ratePerDraw": 0.013162575595873355
         },
         {
           "pair": [
@@ -1780,17 +1789,8 @@
             36
           ],
           "count": 37,
-          "draws": 2810,
-          "ratePerDraw": 0.013167259786476869
-        },
-        {
-          "pair": [
-            6,
-            15
-          ],
-          "count": 36,
-          "draws": 2810,
-          "ratePerDraw": 0.012811387900355872
+          "draws": 2811,
+          "ratePerDraw": 0.013162575595873355
         },
         {
           "pair": [
@@ -1798,8 +1798,8 @@
             24
           ],
           "count": 36,
-          "draws": 2810,
-          "ratePerDraw": 0.012811387900355872
+          "draws": 2811,
+          "ratePerDraw": 0.012806830309498399
         },
         {
           "pair": [
@@ -1807,8 +1807,8 @@
             23
           ],
           "count": 36,
-          "draws": 2810,
-          "ratePerDraw": 0.012811387900355872
+          "draws": 2811,
+          "ratePerDraw": 0.012806830309498399
         },
         {
           "pair": [
@@ -1816,8 +1816,8 @@
             40
           ],
           "count": 36,
-          "draws": 2810,
-          "ratePerDraw": 0.012811387900355872
+          "draws": 2811,
+          "ratePerDraw": 0.012806830309498399
         },
         {
           "pair": [
@@ -1825,8 +1825,8 @@
             49
           ],
           "count": 36,
-          "draws": 2810,
-          "ratePerDraw": 0.012811387900355872
+          "draws": 2811,
+          "ratePerDraw": 0.012806830309498399
         },
         {
           "pair": [
@@ -1834,8 +1834,8 @@
             41
           ],
           "count": 36,
-          "draws": 2810,
-          "ratePerDraw": 0.012811387900355872
+          "draws": 2811,
+          "ratePerDraw": 0.012806830309498399
         },
         {
           "pair": [
@@ -1843,8 +1843,8 @@
             22
           ],
           "count": 35,
-          "draws": 2810,
-          "ratePerDraw": 0.012455516014234875
+          "draws": 2811,
+          "ratePerDraw": 0.012451085023123443
         },
         {
           "pair": [
@@ -1852,8 +1852,8 @@
             48
           ],
           "count": 35,
-          "draws": 2810,
-          "ratePerDraw": 0.012455516014234875
+          "draws": 2811,
+          "ratePerDraw": 0.012451085023123443
         },
         {
           "pair": [
@@ -1861,8 +1861,8 @@
             18
           ],
           "count": 35,
-          "draws": 2810,
-          "ratePerDraw": 0.012455516014234875
+          "draws": 2811,
+          "ratePerDraw": 0.012451085023123443
         },
         {
           "pair": [
@@ -1870,8 +1870,8 @@
             29
           ],
           "count": 35,
-          "draws": 2810,
-          "ratePerDraw": 0.012455516014234875
+          "draws": 2811,
+          "ratePerDraw": 0.012451085023123443
         },
         {
           "pair": [
@@ -1879,8 +1879,8 @@
             45
           ],
           "count": 35,
-          "draws": 2810,
-          "ratePerDraw": 0.012455516014234875
+          "draws": 2811,
+          "ratePerDraw": 0.012451085023123443
         },
         {
           "pair": [
@@ -1888,8 +1888,8 @@
             40
           ],
           "count": 35,
-          "draws": 2810,
-          "ratePerDraw": 0.012455516014234875
+          "draws": 2811,
+          "ratePerDraw": 0.012451085023123443
         },
         {
           "pair": [
@@ -1897,8 +1897,8 @@
             3
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1906,8 +1906,8 @@
             13
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1915,8 +1915,8 @@
             40
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1924,8 +1924,8 @@
             38
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1933,8 +1933,8 @@
             23
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1942,8 +1942,17 @@
             18
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
+        },
+        {
+          "pair": [
+            15,
+            29
+          ],
+          "count": 34,
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1951,8 +1960,8 @@
             22
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1960,8 +1969,8 @@
             33
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1969,8 +1978,8 @@
             46
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1978,8 +1987,8 @@
             38
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1987,8 +1996,8 @@
             41
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -1996,8 +2005,8 @@
             43
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -2005,8 +2014,8 @@
             49
           ],
           "count": 34,
-          "draws": 2810,
-          "ratePerDraw": 0.012099644128113879
+          "draws": 2811,
+          "ratePerDraw": 0.012095339736748489
         },
         {
           "pair": [
@@ -2014,8 +2023,8 @@
             13
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2023,8 +2032,8 @@
             15
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2032,8 +2041,8 @@
             15
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2041,8 +2050,8 @@
             26
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2050,8 +2059,8 @@
             41
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2059,17 +2068,8 @@
             23
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
-        },
-        {
-          "pair": [
-            15,
-            29
-          ],
-          "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2077,8 +2077,8 @@
             26
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2086,8 +2086,8 @@
             35
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2095,8 +2095,8 @@
             30
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2104,8 +2104,8 @@
             47
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2113,8 +2113,8 @@
             31
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2122,8 +2122,8 @@
             40
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2131,8 +2131,8 @@
             41
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2140,8 +2140,8 @@
             42
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2149,8 +2149,8 @@
             47
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2158,8 +2158,8 @@
             47
           ],
           "count": 33,
-          "draws": 2810,
-          "ratePerDraw": 0.011743772241992882
+          "draws": 2811,
+          "ratePerDraw": 0.011739594450373533
         },
         {
           "pair": [
@@ -2167,8 +2167,8 @@
             31
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2176,8 +2176,8 @@
             31
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2185,8 +2185,8 @@
             41
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2194,8 +2194,8 @@
             15
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2203,8 +2203,8 @@
             27
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2212,8 +2212,8 @@
             24
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2221,8 +2221,8 @@
             35
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2230,8 +2230,8 @@
             12
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2239,8 +2239,8 @@
             29
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2248,8 +2248,8 @@
             47
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2257,8 +2257,8 @@
             46
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2266,8 +2266,8 @@
             22
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2275,8 +2275,8 @@
             13
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2284,8 +2284,8 @@
             38
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2293,8 +2293,8 @@
             40
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2302,8 +2302,8 @@
             46
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2311,8 +2311,8 @@
             48
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2320,8 +2320,8 @@
             45
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2329,8 +2329,8 @@
             42
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2338,8 +2338,8 @@
             44
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2347,8 +2347,8 @@
             28
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2356,8 +2356,8 @@
             29
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2365,8 +2365,8 @@
             30
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2374,8 +2374,8 @@
             38
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2383,8 +2383,8 @@
             41
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2392,8 +2392,8 @@
             38
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2401,8 +2401,8 @@
             38
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2410,8 +2410,8 @@
             43
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2419,8 +2419,8 @@
             45
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
         },
         {
           "pair": [
@@ -2428,8 +2428,17 @@
             49
           ],
           "count": 32,
-          "draws": 2810,
-          "ratePerDraw": 0.011387900355871887
+          "draws": 2811,
+          "ratePerDraw": 0.011383849163998577
+        },
+        {
+          "pair": [
+            3,
+            15
+          ],
+          "count": 31,
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2437,8 +2446,8 @@
             16
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2446,8 +2455,8 @@
             22
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2455,8 +2464,8 @@
             35
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2464,8 +2473,8 @@
             38
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2473,8 +2482,8 @@
             13
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2482,8 +2491,8 @@
             7
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2491,8 +2500,8 @@
             13
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2500,8 +2509,8 @@
             37
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2509,8 +2518,8 @@
             28
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2518,8 +2527,8 @@
             36
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2527,8 +2536,8 @@
             15
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2536,8 +2545,8 @@
             30
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2545,8 +2554,8 @@
             47
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2554,8 +2563,8 @@
             13
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2563,8 +2572,8 @@
             26
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2572,8 +2581,8 @@
             42
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2581,8 +2590,8 @@
             15
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         },
         {
           "pair": [
@@ -2590,17 +2599,8 @@
             20
           ],
           "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
-        },
-        {
-          "pair": [
-            13,
-            31
-          ],
-          "count": 31,
-          "draws": 2810,
-          "ratePerDraw": 0.01103202846975089
+          "draws": 2811,
+          "ratePerDraw": 0.011028103877623622
         }
       ]
     }
@@ -3003,82 +3003,82 @@
     {
       "number": 1,
       "count": 293,
-      "draws": 2810,
-      "ratePerDraw": 0.10427046263345195,
+      "draws": 2811,
+      "ratePerDraw": 0.10423336890786197,
       "lastSeenDate": "2026-09-12",
-      "delayInDraws": 3
+      "delayInDraws": 4
     },
     {
       "number": 2,
       "count": 277,
-      "draws": 2810,
-      "ratePerDraw": 0.09857651245551602,
+      "draws": 2811,
+      "ratePerDraw": 0.09854144432586268,
       "lastSeenDate": "2026-08-31",
-      "delayInDraws": 8
+      "delayInDraws": 9
     },
     {
       "number": 3,
       "count": 279,
-      "draws": 2810,
-      "ratePerDraw": 0.09928825622775801,
+      "draws": 2811,
+      "ratePerDraw": 0.09925293489861259,
       "lastSeenDate": "2026-09-07",
-      "delayInDraws": 5
+      "delayInDraws": 6
     },
     {
       "number": 4,
-      "count": 281,
-      "draws": 2810,
-      "ratePerDraw": 0.1,
-      "lastSeenDate": "2026-08-01",
-      "delayInDraws": 21
+      "count": 282,
+      "draws": 2811,
+      "ratePerDraw": 0.10032017075773746,
+      "lastSeenDate": "2026-09-21",
+      "delayInDraws": 0
     },
     {
       "number": 5,
       "count": 296,
-      "draws": 2810,
-      "ratePerDraw": 0.10533807829181495,
+      "draws": 2811,
+      "ratePerDraw": 0.10530060476698684,
       "lastSeenDate": "2026-09-14",
-      "delayInDraws": 2
+      "delayInDraws": 3
     },
     {
       "number": 6,
       "count": 254,
-      "draws": 2810,
-      "ratePerDraw": 0.0903914590747331,
+      "draws": 2811,
+      "ratePerDraw": 0.0903593027392387,
       "lastSeenDate": "2026-04-20",
-      "delayInDraws": 65
+      "delayInDraws": 66
     },
     {
       "number": 7,
       "count": 310,
-      "draws": 2810,
-      "ratePerDraw": 0.1103202846975089,
+      "draws": 2811,
+      "ratePerDraw": 0.11028103877623621,
       "lastSeenDate": "2026-09-19",
-      "delayInDraws": 0
+      "delayInDraws": 1
     },
     {
       "number": 8,
       "count": 257,
-      "draws": 2810,
-      "ratePerDraw": 0.09145907473309609,
+      "draws": 2811,
+      "ratePerDraw": 0.09142653859836357,
       "lastSeenDate": "2026-07-20",
-      "delayInDraws": 26
+      "delayInDraws": 27
     },
     {
       "number": 9,
       "count": 287,
-      "draws": 2810,
-      "ratePerDraw": 0.10213523131672597,
+      "draws": 2811,
+      "ratePerDraw": 0.10209889718961224,
       "lastSeenDate": "2026-09-09",
-      "delayInDraws": 4
+      "delayInDraws": 5
     },
     {
       "number": 10,
       "count": 276,
-      "draws": 2810,
-      "ratePerDraw": 0.09822064056939502,
+      "draws": 2811,
+      "ratePerDraw": 0.09818569903948772,
       "lastSeenDate": "2026-09-16",
-      "delayInDraws": 1
+      "delayInDraws": 2
     }
   ]
 }
