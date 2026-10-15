@@ -581622,5 +581622,129 @@
     "currency": "eur",
     "sourceArchive": "2019-present",
     "sourceEntry": "loto_201911.csv"
+  },
+  {
+    "drawId": "26123",
+    "drawNumber": "26123",
+    "drawSequence": null,
+    "date": "2026-10-14",
+    "day": "MERCREDI",
+    "ruleSet": "modern-5-plus-chance",
+    "numbers": [
+      4,
+      36,
+      32,
+      20,
+      46
+    ],
+    "sortedNumbers": [
+      4,
+      20,
+      32,
+      36,
+      46
+    ],
+    "complementaryNumber": null,
+    "chanceNumber": 5,
+    "secondDraw": {
+      "numbers": [
+        26,
+        31,
+        35,
+        41,
+        43
+      ],
+      "sortedNumbers": [
+        26,
+        31,
+        35,
+        41,
+        43
+      ],
+      "prizeTiers": [
+        {
+          "rank": 1,
+          "winners": 0,
+          "payout": 129340
+        },
+        {
+          "rank": 2,
+          "winners": 174,
+          "payout": 911.2
+        },
+        {
+          "rank": 3,
+          "winners": 8395,
+          "payout": 48.5
+        },
+        {
+          "rank": 4,
+          "winners": 126858,
+          "payout": 3
+        }
+      ]
+    },
+    "prizeTiers": [
+      {
+        "rank": 1,
+        "winners": 0,
+        "payout": 9000000
+      },
+      {
+        "rank": 2,
+        "winners": 0,
+        "payout": 168520.9
+      },
+      {
+        "rank": 3,
+        "winners": 22,
+        "payout": 9529.6
+      },
+      {
+        "rank": 4,
+        "winners": 216,
+        "payout": 686.8
+      },
+      {
+        "rank": 5,
+        "winners": 1364,
+        "payout": 64.9
+      },
+      {
+        "rank": 6,
+        "winners": 11267,
+        "payout": 28.3
+      },
+      {
+        "rank": 7,
+        "winners": 22360,
+        "payout": 11
+      },
+      {
+        "rank": 8,
+        "winners": 182334,
+        "payout": 5.3
+      },
+      {
+        "rank": 9,
+        "winners": 408231,
+        "payout": 2.2
+      }
+    ],
+    "winningCodes": [
+      "R 1470 6050",
+      "H 4888 6993",
+      "I 9618 6187",
+      "S 7035 9029",
+      "G 3324 2188",
+      "J 4388 2671",
+      "I 4852 3169",
+      "P 8808 1996",
+      "B 2785 2747",
+      "P 2221 1212"
+    ],
+    "currency": "eur",
+    "sourceArchive": "2019-present",
+    "sourceEntry": "loto_201911.csv"
   }
 ]
