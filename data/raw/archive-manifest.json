@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "source": "FDJ",
   "historyPage": "https://www.fdj.fr/jeux-de-tirage/loto/historique",
-  "generatedAt": "2026-10-20T01:08:21.053Z",
+  "generatedAt": "2026-10-22T00:46:06.553Z",
   "archives": [
     {
       "id": "2019-present",
@@ -10,14 +10,14 @@
       "url": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afp6",
       "order": 5,
       "file": "data/raw/archives/2019-present.zip",
-      "bytes": 186399,
-      "sha256": "2c56fc2055cadc94e9e9e20cb7d7a2ce3e6133f6406d2248e5e26599e07baf73",
+      "bytes": 186570,
+      "sha256": "c754fe71de9c4a681cd641770a89d47318af496f61b45c1c7e4ccc4d4dd44451",
       "contentType": "application/zip",
       "finalUrl": "https://www.sto.api.fdj.fr/anonymous/service-draw-info/v3/documentations/1a2b3c4d-9876-4562-b3fc-2c963f66afp6",
       "csvEntries": [
         "loto_201911.csv"
       ],
-      "downloadedAt": "2026-10-20T01:08:21.052Z"
+      "downloadedAt": "2026-10-22T00:46:06.552Z"
     },
     {
       "id": "2019-02-to-2019-11",
