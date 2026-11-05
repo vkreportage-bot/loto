@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-03T03:33:14.354Z",
-  "draws": 7687,
+  "generatedAt": "2026-11-05T02:37:43.394Z",
+  "draws": 7688,
   "historic": 4858,
-  "modern": 2829,
+  "modern": 2830,
   "dateRange": {
     "first": "1976-05-19",
-    "last": "2026-11-02"
+    "last": "2026-11-04"
   },
-  "expectedLatestDraw": "2026-11-02",
+  "expectedLatestDraw": "2026-11-04",
   "errors": 0,
   "warnings": 0,
   "issues": []
