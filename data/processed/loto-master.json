@@ -582862,5 +582862,129 @@
     "currency": "eur",
     "sourceArchive": "2019-present",
     "sourceEntry": "loto_201911.csv"
+  },
+  {
+    "drawId": "26133",
+    "drawNumber": "26133",
+    "drawSequence": null,
+    "date": "2026-11-07",
+    "day": "SAMEDI",
+    "ruleSet": "modern-5-plus-chance",
+    "numbers": [
+      27,
+      23,
+      33,
+      21,
+      35
+    ],
+    "sortedNumbers": [
+      21,
+      23,
+      27,
+      33,
+      35
+    ],
+    "complementaryNumber": null,
+    "chanceNumber": 4,
+    "secondDraw": {
+      "numbers": [
+        2,
+        10,
+        23,
+        24,
+        47
+      ],
+      "sortedNumbers": [
+        2,
+        10,
+        23,
+        24,
+        47
+      ],
+      "prizeTiers": [
+        {
+          "rank": 1,
+          "winners": 2,
+          "payout": 98547
+        },
+        {
+          "rank": 2,
+          "winners": 458,
+          "payout": 420.5
+        },
+        {
+          "rank": 3,
+          "winners": 18377,
+          "payout": 26.9
+        },
+        {
+          "rank": 4,
+          "winners": 251670,
+          "payout": 3
+        }
+      ]
+    },
+    "prizeTiers": [
+      {
+        "rank": 1,
+        "winners": 0,
+        "payout": 13000000
+      },
+      {
+        "rank": 2,
+        "winners": 0,
+        "payout": 269664.2
+      },
+      {
+        "rank": 3,
+        "winners": 59,
+        "payout": 5686.1
+      },
+      {
+        "rank": 4,
+        "winners": 461,
+        "payout": 514.9
+      },
+      {
+        "rank": 5,
+        "winners": 2460,
+        "payout": 57.6
+      },
+      {
+        "rank": 6,
+        "winners": 22555,
+        "payout": 22.6
+      },
+      {
+        "rank": 7,
+        "winners": 37671,
+        "payout": 10.5
+      },
+      {
+        "rank": 8,
+        "winners": 344965,
+        "payout": 4.5
+      },
+      {
+        "rank": 9,
+        "winners": 526882,
+        "payout": 2.2
+      }
+    ],
+    "winningCodes": [
+      "J 4123 2777",
+      "A 1037 1892",
+      "H 8137 0372",
+      "N 3224 6109",
+      "V 5561 1659",
+      "O 3625 5616",
+      "G 6574 7881",
+      "B 8379 2487",
+      "O 6489 4840",
+      "Q 1716 2649"
+    ],
+    "currency": "eur",
+    "sourceArchive": "2019-present",
+    "sourceEntry": "loto_201911.csv"
   }
 ]
