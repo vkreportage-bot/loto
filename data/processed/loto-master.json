@@ -583358,5 +583358,129 @@
     "currency": "eur",
     "sourceArchive": "2019-present",
     "sourceEntry": "loto_201911.csv"
+  },
+  {
+    "drawId": "26137",
+    "drawNumber": "26137",
+    "drawSequence": null,
+    "date": "2026-11-16",
+    "day": "LUNDI",
+    "ruleSet": "modern-5-plus-chance",
+    "numbers": [
+      9,
+      6,
+      32,
+      45,
+      1
+    ],
+    "sortedNumbers": [
+      1,
+      6,
+      9,
+      32,
+      45
+    ],
+    "complementaryNumber": null,
+    "chanceNumber": 7,
+    "secondDraw": {
+      "numbers": [
+        16,
+        22,
+        28,
+        39,
+        46
+      ],
+      "sortedNumbers": [
+        16,
+        22,
+        28,
+        39,
+        46
+      ],
+      "prizeTiers": [
+        {
+          "rank": 1,
+          "winners": 1,
+          "payout": 142236
+        },
+        {
+          "rank": 2,
+          "winners": 261,
+          "payout": 598.8
+        },
+        {
+          "rank": 3,
+          "winners": 10874,
+          "payout": 36.9
+        },
+        {
+          "rank": 4,
+          "winners": 161016,
+          "payout": 3
+        }
+      ]
+    },
+    "prizeTiers": [
+      {
+        "rank": 1,
+        "winners": 0,
+        "payout": 23000000
+      },
+      {
+        "rank": 2,
+        "winners": 2,
+        "payout": 89628.6
+      },
+      {
+        "rank": 3,
+        "winners": 58,
+        "payout": 754.3
+      },
+      {
+        "rank": 4,
+        "winners": 326,
+        "payout": 484
+      },
+      {
+        "rank": 5,
+        "winners": 2578,
+        "payout": 36.5
+      },
+      {
+        "rank": 6,
+        "winners": 17926,
+        "payout": 18.9
+      },
+      {
+        "rank": 7,
+        "winners": 37783,
+        "payout": 6.9
+      },
+      {
+        "rank": 8,
+        "winners": 254658,
+        "payout": 4.1
+      },
+      {
+        "rank": 9,
+        "winners": 527286,
+        "payout": 2.2
+      }
+    ],
+    "winningCodes": [
+      "D 4797 4678",
+      "E 3488 3021",
+      "X 0014 5926",
+      "Q 2602 6068",
+      "V 4137 2449",
+      "D 6850 9110",
+      "H 6572 2192",
+      "D 0936 9218",
+      "A 2959 6959",
+      "G 9617 8800"
+    ],
+    "currency": "eur",
+    "sourceArchive": "2019-present",
+    "sourceEntry": "loto_201911.csv"
   }
 ]
