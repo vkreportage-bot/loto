@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-22T02:33:06.617Z",
-  "rawRows": 7695,
-  "normalizedDraws": 7695,
+  "generatedAt": "2026-11-24T06:13:06.239Z",
+  "rawRows": 7696,
+  "normalizedDraws": 7696,
   "duplicatesRemoved": 0,
   "duplicateProvenance": [],
   "historicDraws": 4858,
-  "modernDraws": 2837,
+  "modernDraws": 2838,
   "dateRange": {
     "first": "1976-05-19",
-    "last": "2026-11-21"
+    "last": "2026-11-23"
   }
 }
